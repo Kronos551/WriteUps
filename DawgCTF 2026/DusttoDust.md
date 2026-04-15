@@ -1,4 +1,4 @@
-# Dust to Dust
+# DawgCTF2026 - Dust to Dust
 <img width="1107" height="182" alt="DustToDustCard" src="https://github.com/user-attachments/assets/cce02f4d-6e14-4521-a002-7a8f7d90e2b6" />
 
 In this challenge, we're given a C file and an output text file. Usually you aren't given just a raw C file in a reversing challenge, but I'm not one to complain. Let's start by opening up the output:
@@ -191,10 +191,12 @@ void freeArray(char** arr, int len) {
     arr = NULL;
 }
 ```
+
 This is a super simple function, all it does is free up the memory contained in an array line-by-line, just some best practice progamming stuff.
 
 
 Now I know what the program does, and I know what its output is, but I still want to know what the output file used to be. We can see a comment in the program where the author "forgot to write" a level 2 to this function, likely supposed to be the unpacker they mention in the challenge description. This is probably where you're intended to write your solution script, but I lowkey really didn't feel like remembering how to code in C, so I just wrote it in python in a separate file:
+
 
 ```python
 file = open('output.txt','r')
@@ -221,3 +223,7 @@ for line in lines:
     print(top_str)
     print(bottom_str)
 ```
+
+My script splits the output at every "}," then creates an empty list for the top and bottom half of each character. Then, it takes each character, converts to long,  subtracts 32, then formats the number as 6 digit binary. Finally, it splits that binary in half: the first half goes on top, the second half on bottom. For the sake of readability, I replaced every 0 with a "█" and every 1 with a space. This just makes the final image easier to read. Slap that shit in notepad and zoom way out so you can read it, and there's the flag:
+
+<img width="196" height="152" alt="DustToDust_Flag" src="https://github.com/user-attachments/assets/7ceeeaa8-b6ec-4a5a-b25f-8a9a5eff64ed" />
