@@ -228,4 +228,4 @@ My script splits the output at every "}," then creates an empty list for the top
 
 <img width="196" height="152" alt="DustToDust_Flag" src="https://github.com/user-attachments/assets/7ceeeaa8-b6ec-4a5a-b25f-8a9a5eff64ed" />
 
-**__DawgCTF{Th1s_w4s_1nspIr3d_By_UND3RT4L3!}__**
+***DawgCTF{Th1s_w4s_1nspIr3d_By_UND3RT4L3!}***
