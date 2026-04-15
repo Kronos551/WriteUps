@@ -227,3 +227,5 @@ for line in lines:
 My script splits the output at every "}," then creates an empty list for the top and bottom half of each character. Then, it takes each character, converts to long,  subtracts 32, then formats the number as 6 digit binary. Finally, it splits that binary in half: the first half goes on top, the second half on bottom. For the sake of readability, I replaced every 0 with a "█" and every 1 with a space. This just makes the final image easier to read. Slap that shit in notepad and zoom way out so you can read it, and there's the flag:
 
 <img width="196" height="152" alt="DustToDust_Flag" src="https://github.com/user-attachments/assets/7ceeeaa8-b6ec-4a5a-b25f-8a9a5eff64ed" />
+
+**__DawgCTF{Th1s_w4s_1nspIr3d_By_UND3RT4L3!}__**
