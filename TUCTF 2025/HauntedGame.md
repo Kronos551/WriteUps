@@ -6,4 +6,4 @@ For this challenge, you're given a zip containing the files for a Unity game. I 
 
 Right away, I see that **assets ripped** is in bold, so I start looking for an asset ripper for Unity. I came across a tool on github called UABEA that did a really good job. In the assets I find 4 more notes, as well as textures and sound files for the ghosts:
 
-<img width="830" height="1120" alt="Note2-sharedassets0 assets-22" src="https://github.com/user-attachments/assets/f557bf00-573f-4a15-9a12-c6912d3d8b6b" />
+<img width="415" height="560" alt="Note2-sharedassets0 assets-22" src="https://github.com/user-attachments/assets/f557bf00-573f-4a15-9a12-c6912d3d8b6b" />
