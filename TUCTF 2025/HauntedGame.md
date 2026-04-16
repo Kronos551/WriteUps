@@ -11,7 +11,13 @@ Right away, I see that **assets ripped** is in bold, so I start looking for an a
 
 <img width="415" height="560" alt="Note2-sharedassets0 assets-22" src="https://github.com/user-attachments/assets/f557bf00-573f-4a15-9a12-c6912d3d8b6b" />
 
-So, its beginning to look like this one challenge is going to use several tools. Note 2 mentions spectral sounds, which makes me think of spectrograms, a way of visualizing sound. I threw the audio files from the asset list into Audacity and converted them to spectrograms, and each scream has 3 letters in it:
+So, its beginning to look like this one challenge is going to use several tools. Note 2 mentions spectral sounds, which makes me think of spectrograms, a way of visualizing sound. I threw the audio files from the asset list into Audacity and converted them to spectrograms, and I saw that each scream has 3 characters hidden in it:
 
 
 <img width="511" height="658" alt="AudacityScreams" src="https://github.com/user-attachments/assets/408bb6f3-734c-4b3d-82ab-cc8349c8ae7f" />
+
+Now, Note 3 mentions ordering the ghosts in order from oldest to youngest based on their visibility. They call the first ghost the Alpha Ghost, which is a clever hint. I opened up all of the textures in GIMP and then reordered them based on their **alpha values**.
+
+Now I have the chunks in the right order, but the characters themselves are still jumbled up. Note 4 mentions the order of the ghost's "hexes" matching the order of their message. Using the color picker tool in GIMP, I checked the RGB values of each ghost. I reordered the characters for each ghost based on these RGB values, smallest to largest like the note said. This gave me the flag:
+
+### TUCTF{GHOST_IN_THE_MACHINE_02101981}
