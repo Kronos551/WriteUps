@@ -9,5 +9,9 @@ For this challenge, you're given a zip containing the files for a Unity game. I 
 Right away, I see that **assets ripped** is in bold, so I start looking for an asset ripper for Unity. I came across a tool on github called UABEA that did a really good job. In the assets I find 4 more notes, as well as textures and sound files for the ghosts:
 
 
-
 <img width="415" height="560" alt="Note2-sharedassets0 assets-22" src="https://github.com/user-attachments/assets/f557bf00-573f-4a15-9a12-c6912d3d8b6b" />
+
+So, its beginning to look like this one challenge is going to use several tools. Note 2 mentions spectral sounds, which makes me think of spectrograms, a way of visualizing sound. I threw the audio files from the asset list into Audacity and converted them to spectrograms, and each scream has 3 letters in it:
+
+
+<img width="511" height="658" alt="AudacityScreams" src="https://github.com/user-attachments/assets/408bb6f3-734c-4b3d-82ab-cc8349c8ae7f" />
